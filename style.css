@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000000;
+    color: #fbf9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background: #2553df;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    padding: 14px 28px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #1942be;
+}
+
+.titulo {
+    color: #f9f9f9;
+    font-size: small;
+    margin-top: 50px;
+    text-shadow: 3px 3px 3px black, 3px 3px 3px black, 3px 3px 3px black, 3px 3px 3px black, 3px 3px 3px black
+}
+
+.titulo2 {
+    color: #ff0909;
+}
+
+.logo {
+    margin-top: 13px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    /* Establecer la opacidad inicial en 0 (oculto) */
+    animation: fadeIn 2.5s ease 3s forwards;
+    /* Nombre de la animación, duración, función de timing, retraso de 5 segundos y fill-mode forwards */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* La opacidad inicial es 0 (completamente transparente) */
+    }
+    to {
+        opacity: 1;
+        /* La opacidad final es 1 (completamente visible) */
+    }
+}
+
+.titleContainer {
+    width: 100%;
+    border-bottom: 2px solid whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.titleNav {
+    color: #f9f9f9;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0), 3px 3px 3px rgb(0, 0, 0), 3px 3px 3px rgb(244, 243, 240);
+    background: linear-gradient( 180deg, rgb(92, 3, 3) 0%, rgb(197, 22, 3) 22%, rgba(255, 27, 10, 0.774) 81%, rgb(65, 9, 1) 99%, rgba(239, 239, 241, 0.8268287866137178) 100%);
+    width: 90%;
+    padding: 2px;
+    text-align: center;
+    height: 13px;
+    border-radius: 6px;
+    border: 1px solid whitesmoke;
+    list-style: none;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.active {
+    text-decoration: none;
+}
+
+.titleNav:hover {
+    text-decoration: none;
+    color: #c30404;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0), 3px 3px 3px rgb(0, 0, 0), 3px 3px 3px rgb(224, 178, 9);
+}
+
+.navContainer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+    background-image: url('./assets/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.menuContainer {
+    display: flex;
+    text-align: center;
+}
+
+.menuContainer,
+NavLink {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-shadow: 3px 3px 3px rgb(215, 222, 2), 3px 3px 3px rgb(224, 178, 9);
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.innovationNav {
+    color: rgb(255, 255, 255);
+    animation: text ease alternate-reverse infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    transition: 1ms;
+    background-color: none;
+    font-size: 30px;
+}
+
+@keyframes text {
+    20% {
+        opacity: 1;
+        scale: 1;
+    }
+    50% {
+        opacity: 1;
+        scale: 1;
+        opacity: 0.9;
+        scale: 0.9;
+        opacity: 1;
+        scale: 1;
+        opacity: 0.9;
+        scale: 0.9;
+    }
+    90% {}
+}
+
+.techNav {
+    color: rgb(194, 0, 0);
+    font-size: 19px;
+}
+
+.likesBtn {
+    background: linear-gradient( 180deg, rgb(212, 56, 4) 0%, rgb(197, 22, 3) 22%, rgba(255, 123, 0, 0.774) 81%, rgb(196, 128, 1) 99%, rgba(239, 239, 241, 0.8268287866137178) 100%);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
+}
+
+@media only screen and (min-width: 1000px) {
+    .textContainer {
+        width: 60vw;
+        margin-left: 20%;
+        margin-right: 30%;
+        align-items: center;
+    }
+    .menuContainer {
+        justify-content: center;
+        align-items: center;
+        margin-top: 10;
+        visibility: visible;
+    }
+    .menuContainer,
+    NavLink,
+    h4 {
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+    }
+    .titleContainer {
+        width: 100%;
+        border-bottom: 2px solid whitesmoke;
+        text-align: center;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .titleNav {
+        color: #e1f009;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0), 3px 3px 3px rgb(0, 0, 0), 3px 3px 3px rgb(224, 178, 9);
+        width: 120%;
+        height: 35px;
+        border-radius: 6px;
+        border: 1px solid whitesmoke;
+        list-style: none;
+        text-decoration: none;
+    }
+    .active {
+        text-decoration: none;
+    }
+    .titleNav:hover {
+        text-decoration: none;
+        color: #e1f009;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0), 3px 3px 3px rgb(0, 0, 0), 3px 3px 3px rgb(224, 178, 9);
+        background-color: rgba(251, 180, 0, 0.886);
+    }
+    .likesBtn {
+        margin-right: 20px
+    }
+    .imgLogo {
+        width: 10%;
+        height: 10%;
+    }
+}
+
+.footer {
+    border-top: 2px solid #fbf9f9;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-media a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    opacity: 0.7;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+/* Estilos responsivos */
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info {
+        margin-bottom: 10px;
+    }
+    .social-media a {
+        margin: 5px;
+    }
+}
+
+#slider {
+    overflow: hidden;
+    margin-top: 45px;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    top: 10px;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+.fa-brands {
+    font-size: 12px;
+    color: red;
+}
