@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+}
+
+
+/* Estilo del botón */
+
+.btnBack {
+    /* Cambiar el color de fondo a azul */
+    background-color: #007bff;
+    /* Cambiar el color del texto a blanco */
+    color: #fff;
+    /* Añadir bordes redondeados */
+    border-radius: 4px;
+    /* Añadir un borde con grosor y estilo */
+    border: 2px solid #007bff;
+    /* Cambiar el tamaño del texto */
+    font-size: 16px;
+    /* Añadir un poco de espacio alrededor del texto */
+    padding: 10px 20px;
+    /* Cambiar el cursor cuando se pasa sobre el botón */
+    cursor: pointer;
+    /* Quitar el estilo predeterminado del botón */
+    outline: none;
+}
+
+
+/* Estilo del botón cuando se pasa el cursor por encima */
+
+.btnBack:hover {
+    /* Cambiar el color de fondo a un tono más oscuro de azul */
+    background-color: #0056b3;
+    /* Cambiar el color del borde a un tono más oscuro de azul */
+    border-color: #0056b3;
+}
+
+
+/* Estilo del botón cuando se hace clic */
+
+.btnBack:active {
+    /* Cambiar el color de fondo a un tono aún más oscuro de azul */
+    background-color: #003380;
+    /* Cambiar el color del borde a un tono aún más oscuro de azul */
+    border-color: #003380;
+}
+
+.title {
+    color: aliceblue;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    /* Establecer el tamaño máximo de las imágenes para que sean del mismo tamaño */
+    max-width: 100px;
+    max-height: 100px;
+    /* Agregar un espacio entre las imágenes */
+    margin: 0 10px;
+}
+
+.text {
+    color: antiquewhite;
+    text-align: center;
+}
+
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./informacion.css">
+    <link rel="stylesheet" href="../../style.css">
+
+    <title>Informacion</title>
+</head>
+
+
+
+<body>
+    <div class="navContainer">
+        <div class="titleContainer">
+            <img class="logo" src="../../assets/TECHlogo.png" alt="logo">
+            <h1 class="titulo">INNOVATION <span class="titulo2">TECH</span></h1>
+
+        </div>
+        <div class="menuContainer" id="menuContainer">
+            <a class="active" href="/pages/Galeria/galeria.html">
+                <h4 class="titleNav">Galeria</h4>
+            </a>
+            <a class="active" href="/pages/Servicios/Servicios.html">
+                <h4 class="titleNav"> Servicios</h4>
+            </a>
+            <a class="active" href="/">
+                <h4 class="titleNav">Home</h4>
+            </a>
+            <a class="active" href="/pages/About/About.html">
+                <h4 class="titleNav">About</h4>
+            </a>
+        </div>
+    </div>
+
+    <div class="user-card">
+        <img src="../assets/logo.png" alt="Logo">
+        <div>
+            <h3>Desarrollo Web</h3>
+            <div class="info" slot="info">Desarrollamos tu paginas web personalizada.
+                <br>
+                <br>
+                <span class="preguntas">Que necesito para comenzar?</span><br>Solo necesitamos un hosting un dominio para poder empezar a crear tu pagina web.
+
+                <br>
+                <br>Buscamos un dominio apropiado (un dominio es la direccion para poder buscar tu pagina en internet "www.ejemplo tudominio.com") una vez que tengamos el dominio necesitamos configurarlo en un servidor web tambien llamado "Hosting" es
+                alli donde estara hospedada la informacion de tu pagina.
+                <br>
+                <br>
+                <div slot="costo"> <span class="preguntas">Como creamos tu pagina? </span><br>Nosotros trabajamos con tegnologias web como HTML5, CSS3 Y JAVASCRIP y utilizamos estas tecnologias para poder escribir el codigo necesario para darle vida a tu pagina despues
+                    lo configuramos en un hosting para que pueda ser visitado <br><br><br>
+                    <span class="preguntas">Que puedo poner en mi sitio web?</span> <br> Podemos publicar cualquier tipo de contenido multimedia como texto, fotos ,videos, enlazar redes sociales y correo electronico. (los costos varian de acuerdo al contenido).
+                    <br><br>
+
+
+                </div>
+            </div>
+            <button class="toggle-info">Show Info</button>
+            <div class="info">
+                <slot name="info"></slot>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleButtons = document.querySelectorAll('.toggle-info');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const infoContent = button.parentElement.querySelector('.info');
+                infoContent.style.display = infoContent.style.display === 'block' ? 'none' : 'block';
+                button.textContent = infoContent.style.display === 'block' ? 'Hide Info' : 'Show Info';
+            });
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
