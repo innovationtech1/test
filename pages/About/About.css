@@ -1,0 +1,18 @@
+.foto {
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+}
+
+.subtitle {
+    color: red;
+    text-align: center;
+}
+
+.negritas {
+    font-weight: bolder;
+    color: red;
+    font-size: medium;
+}

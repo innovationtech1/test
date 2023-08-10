@@ -6,7 +6,8 @@
     grid-template-columns: 1fr 8fr;
     grid-gap: 10px;
     margin-bottom: 15px;
-    border-top: blue 5px solid;
+    border-top: blue 10px solid;
+    border-bottom: blue 4px solid;
     margin-top: 3%;
     margin-left: 1%;
 }
@@ -38,9 +39,24 @@ h3 {
 
 body {
     background-color: black;
+    height: auto;
 }
 
 .preguntas {
     color: red;
     font-weight: 600;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* Ajusta la altura según tus necesidades */
+}
+
+.video {
+    max-width: 100%;
+    max-height: 100%;
 }

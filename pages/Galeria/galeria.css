@@ -61,6 +61,12 @@ body {
     max-height: 100px;
     /* Agregar un espacio entre las imágenes */
     margin: 0 10px;
+    animation-name: fadeIn;
+}
+
+.img {
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
 .text {
@@ -68,5 +74,21 @@ body {
     text-align: center;
 }
 
+.container img {
+    width: 100px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 100px;
+    /* Ajusta el tamaño según tus necesidades */
+    animation: rotateAndFade 5s infinite;
+}
 
+@keyframes rotateAndFade {
+    0% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
 }
